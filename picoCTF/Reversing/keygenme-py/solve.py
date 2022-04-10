@@ -5,7 +5,6 @@ import hashlib
 # the username_trial presented in the keygenme.py
 username = b"PRITCHARD"
 
-# 
 hash_index = [4, 5, 3, 6, 2, 7, 1, 8]
 final_str = ''
 for index in hash_index:
