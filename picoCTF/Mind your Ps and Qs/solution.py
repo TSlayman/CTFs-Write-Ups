@@ -9,7 +9,10 @@ q = 674357869540600933870145899564746495319033
 
 phi = (p - 1) * (q - 1)
 
+# Calculate the modular inverse of (e, phi)
 d = inverse(e, phi)
 
+# (c ^ d) % n
 m = pow(c, d, n)
+
 print(bytes.fromhex(hex(m)[2:]).decode('utf-8'))
